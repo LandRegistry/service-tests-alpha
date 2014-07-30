@@ -1,0 +1,30 @@
+---
+default: --profile local
+local:
+  SYSTEM_OF_RECORD_API_URL='http://0.0.0.0:8000'
+  MINT_API_URL='http://0.0.0.0:8001'
+  PROPERTY_FRONTEND_URL='http://0.0.0.0:8002'
+  SEARCH_API_URL='http://0.0.0.0:8003'
+  CASEWORK_FRONTEND_URL='http://0.0.0.0:8004'
+  PUBLIC_TITLES_API_URL='http://0.0.0.0:8005'
+  PRIVATE_PROPERTY_FRONTEND_URL='http://0.0.0.0:8007'
+  --format pretty
+docker:
+  SYSTEM_OF_RECORD_API_URL='http://172.16.42.43:8000'
+  MINT_API_URL='http://172.16.42.43:8001'
+  PROPERTY_FRONTEND_URL='http://172.16.42.43:8002'
+  SEARCH_API_URL='http://172.16.42.43:8003'
+  CASEWORK_FRONTEND_URL='http://172.16.42.43:8004'
+  PUBLIC_TITLES_API_URL='http://172.16.42.43:8005'
+  PRIVATE_PROPERTY_FRONTEND_URL='http://172.16.42.43:8007'
+  --format pretty
+heroku:
+  SYSTEM_OF_RECORD_API_URL='http://lr-system-of-record.herokuapp.com'
+  MINT_API_URL='http://lr-mint.herokuapp.com'
+  PROPERTY_FRONTEND_URL='http://lr-property-frontend.herokuapp.com'
+  SEARCH_API_URL='http://lr-search-api.herokuapp.com'
+  CASEWORK_FRONTEND_URL='http://lr-casework-frontend.herokuapp.com'
+  PUBLIC_TITLES_API_URL='http://lr-public-titles-api.herokuapp.com'
+  PRIVATE_PROPERTY_FRONTEND_URL='http://coming.soon'
+  --format progress
+
