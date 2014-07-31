@@ -12,8 +12,8 @@ env:
   - CASEWORK_FRONTEND_URL='http://lr-casework-frontend.herokuapp.com'
   - PUBLIC_TITLES_API_URL='http://lr-public-titles-api.herokuapp.com'
   - PRIVATE_PROPERTY_FRONTEND_URL='http://coming.soon'
-  - secure: LJEocntktAZE0xFpYIfhMkxgTaxURhIhJqD+YRasVPli18ReBWfmdMoBSHDuuXfffGklBuCrVx3fntii7Pm5bgn9Xu9xNcZVYrod9oXn47qL0lVjYuzXsDI15NojYoD9pAO9KuJ2J4FlrhSsn/+XBBP2hBXT660t4bcOGeHOucw=
-  - secure: JLoDx5hajyrVgQ3FyzH2ut1VUSYnaR1uka7EmRpkp0R23o87fVbTX5nUQNFx7XodCYBBQ88Jmfejqcv3yp+hKdwe4z02RSCkxgTwvzRd0uQLsyaGG2PpwpDXLW1uDWNmoqfiyR+9kEPUt1ztB5VoEZr/CQXAYeYIDDjLIxn3A5A=
+  - secure: "HNwD8WAyV7fazoel0E+X9SCqCttW1VcJjEhEJGVWWWqZeLLkTDg+Z7uRFDdBt9xsCJTFmoGV4SEpypPAb9h/cFeOLcoZrRoCXL0rlh5APT28Xd1h3vcGnDHG7g6MQXwrl5wX1NfmJ9DM+VXPJFgTKSahDfiNOe5/Bfkfs9d0TnU="
+  - secure: "TCBTKvMROQKmI4WFO+d35VxJakpV54MhTBTyzFNGRNp1xD0qivwxFWOs0V8/AVWLn6H/F6B7y/s35Vs+jVdHjn6GwQAtoeWgAux2NoypOO9gL/VHlsUjX2B3/UsVVa9MLt992nzZmbABxiNANAqYmU8Qfntx8c19nCA8/sZlO7I="
 before_install:
 - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
 before_script:
