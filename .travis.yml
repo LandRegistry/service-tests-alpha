@@ -19,6 +19,6 @@ before_install:
 before_script:
 - bundle install
 script:
-- bundle exec cucumber --format json --out report.json
+- bundle exec cucumber -p heroku --format json --out report.json
   --format pretty
 #- curl -X POST -H 'Content-Type:application/json' -d @/home/travis/build/LandRegistry/api-tests/report.json http://lr-apitest-dashboard.herokuapp.com/import/cucumber
