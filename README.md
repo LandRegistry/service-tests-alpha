@@ -1,6 +1,8 @@
-[![Build Status](https://travis-ci.org/LandRegistry/api-tests.svg)](https://travis-ci.org/LandRegistry/api-tests)
+[![Build Status](https://travis-ci.org/LandRegistry/service-tests.svg)](https://travis-ci.org/LandRegistry/service-tests)
 
-# API Tests
+# Service Tests
+
+Tests for Land Registry microservices.
 
 ## Installing
 
