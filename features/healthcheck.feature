@@ -28,4 +28,9 @@ Feature: Confirm applications are healthy
     When I GET to /health
     Then I should get a 200 status code
 
+  Scenario: service-frontend is healthy
+    Given app service-frontend
+    When I GET to /health
+    Then I should get a 200 status code
+
 

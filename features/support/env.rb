@@ -6,4 +6,4 @@ $app_search_api             = (ENV['SEARCH_API_URL']                || 'http://0
 $app_casework_frontend      = (ENV['CASEWORK_FRONTEND_URL']         || 'http://0.0.0.0:8004')
 $app_public_titles_api      = (ENV['PUBLIC_TITLES_API_URL']         || 'http://0.0.0.0:8005')
 # the-feeder (not a webapp)                                             http://0.0.0.0:8006
-$app_private_property       = (ENV['PRIVATE_PROPERTY_FRONTEND_URL'] || 'http://0.0.0.0:8007')
+$app_service_frontend       = (ENV['SERVICE_FRONTEND_URL']          || 'http://0.0.0.0:8007')
