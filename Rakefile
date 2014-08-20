@@ -8,8 +8,8 @@ namespace :features do
     t.profile = "local"
   end
 
-  Cucumber::Rake::Task.new(:docker) do |t|
-    t.profile = "docker"
+  Cucumber::Rake::Task.new(:devenv) do |t|
+    t.profile = "devenv"
   end
 
   Cucumber::Rake::Task.new(:heroku) do |t|

@@ -21,7 +21,7 @@ Run the test tasks with [Rake](https://github.com/jimweirich/rake):
 
     rake # defaults to 'local'
     rake features:local
-    rake features:docker
+    rake features:devenv
     rake features:heroku
 
 Or to run a specific feature:

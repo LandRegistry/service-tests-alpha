@@ -9,14 +9,14 @@ local:
   PUBLIC_TITLES_API_URL='http://0.0.0.0:8005'
   SERVICE_FRONTEND_URL='http://0.0.0.0:8007'
   --format pretty
-docker:
-  SYSTEM_OF_RECORD_API_URL='http://172.16.42.43:8000'
-  MINT_API_URL='http://172.16.42.43:8001'
-  PROPERTY_FRONTEND_URL='http://172.16.42.43:8002'
-  SEARCH_API_URL='http://172.16.42.43:8003'
-  CASEWORK_FRONTEND_URL='http://172.16.42.43:8004'
-  PUBLIC_TITLES_API_URL='http://172.16.42.43:8005'
-  SERVICE_FRONTEND_URL='http://172.16.42.43:8007'
+devenv:
+  SYSTEM_OF_RECORD_API_URL='http://system-of-record.landregistry.local'
+  MINT_API_URL='http://mint.landregistry.local'
+  PROPERTY_FRONTEND_URL='http://property-frontend.landregistry.local'
+  SEARCH_API_URL='http://search-api.landregistry.local'
+  CASEWORK_FRONTEND_URL='http://casework-frontend.landregistry.local'
+  PUBLIC_TITLES_API_URL='http://public-titles-api.landregistry.local'
+  SERVICE_FRONTEND_URL='http://service-frontend.landregistry.local'
   --format pretty
 heroku:
   SYSTEM_OF_RECORD_API_URL='http://lr-system-of-record.herokuapp.com'

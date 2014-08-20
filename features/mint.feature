@@ -72,6 +72,6 @@ Feature: Mint title additions and amendments
       }
     }
     """
-    Then I should get a 200 status code 
+    Then I should get a 201 status code 
     #Then debug
 
