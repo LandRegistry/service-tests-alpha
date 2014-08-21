@@ -171,7 +171,7 @@ module LandRegistry
 
     # support for 'fixtures' in suite root
     def validate(against)
-      file_name = File.join(File.dirname(__FILE__), "../..", 'fixtures', "#{against}.json")
+      file_name = File.join(File.dirname(__FILE__), "../..", 'schemas', "#{against}.json")
       if File.exists?(file_name) and not against.is_a? Hash
         JSON::Validator.validate!(file_name, last_body)
       else

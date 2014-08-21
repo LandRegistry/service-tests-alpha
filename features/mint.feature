@@ -75,3 +75,7 @@ Feature: Mint title additions and amendments
     Then I should get a 201 status code 
     #Then debug
 
+  Scenario: Store a new title
+    Given app system-of-record
+    When I GET to /titles/TEST123
+    Then the response is valid according to the "systemofrecord" schema
