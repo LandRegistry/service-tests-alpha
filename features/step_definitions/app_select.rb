@@ -12,6 +12,7 @@ Given(/^app (.*?)$/) do |app|
   when /^[Pp]ublic[- ]?[Tt]itle.*/      then @app = $app_public_titles_api
   when /^[Ss]earch[- ]?[Aa]pi.*/        then @app = $app_search_api
   when /^[Ss]ervice[- ]?[Ff]rontend.*/  then @app = $app_service_frontend
+  when /^[Dd]ecision.*/                 then @app = $app_decision
   else
     raise 'Invalid app ' + app 
   end

@@ -7,3 +7,4 @@ $app_casework_frontend      = (ENV['CASEWORK_FRONTEND_URL']         || 'http://0
 $app_public_titles_api      = (ENV['PUBLIC_TITLES_API_URL']         || 'http://0.0.0.0:8005')
 # the-feeder (not a webapp)                                             http://0.0.0.0:8006
 $app_service_frontend       = (ENV['SERVICE_FRONTEND_URL']          || 'http://0.0.0.0:8007')
+$app_decision               = (ENV['DECISION_URL']                  || 'http://0.0.0.0:8009')
