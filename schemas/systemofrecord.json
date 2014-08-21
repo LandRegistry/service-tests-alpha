@@ -1,7 +1,22 @@
-{ "$schema" : "http://json-schema.org/draft-04/schema#",
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
   "type" : "object",
-  "required" : ["title"],
+  "required" : [ "title" ],
   "properties" : {
-    "title" : {"type" : "object"}
+    "title" : {
+      "required" : [ "data", "title_number" ],
+      "type" : "object",
+      "properties" : {
+        "data" : {
+          "type" : "object",
+          "required" : [ "created_ts", "public_key", "sha256", "title_number", "title" ],
+          "properties" : {
+            "title" : {
+              "type" : "object"
+            }
+          }
+        }
+      }
+    }
   }
 }
