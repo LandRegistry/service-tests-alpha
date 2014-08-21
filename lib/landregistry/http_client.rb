@@ -170,6 +170,12 @@ module LandRegistry
     end
 
     # support for 'fixtures' in suite root
+    def fixture(which)
+      file_name = File.join(File.dirname(__FILE__), "../..", 'fixtures', "#{which}.json")
+      open(file_name).read
+    end
+
+    # validate against 'schemas' in suite root
     def validate(against)
       file_name = File.join(File.dirname(__FILE__), "../..", 'schemas', "#{against}.json")
       if File.exists?(file_name) and not against.is_a? Hash

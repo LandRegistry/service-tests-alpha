@@ -14,6 +14,12 @@ When(/^I (\w+) to (\/\S*?) with the body:$/) do |verb, url, body|
   @client.send(verb.downcase, @app, @client.hydrater(url), body, env)
 end
 
+
+When(/^I (\w+) to (\/\S*?) with the fixture: "(.*?)"$/) do |verb, url, fixture|
+  body = @client.fixture(fixture)
+  step "I #{verb} to #{url} with the body:", body
+end
+
 When(/^I make a (\w+) request to (\/\S*?)$/) do |verb, url|
   step "I #{verb} to #{url}"
 end
