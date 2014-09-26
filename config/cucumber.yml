@@ -9,6 +9,11 @@ local:
   PUBLIC_TITLES_API_URL='http://0.0.0.0:8005'
   SERVICE_FRONTEND_URL='http://0.0.0.0:8007'
   DECISION_URL='http://0.0.0.0:8009'
+  OWNERSHIP_URL='http://0.0.0.0:8010'
+  MATCHING_URL='http://0.0.0.0:8011'
+  INTRODUCTIONS_URL='http://0.0.0.0:8013'
+  CASES_URL='http://0.0.0.0:8014'
+  HISTORIAN_URL='http://0.0.0.0:8015'
   --format pretty
 devenv:
   SYSTEM_OF_RECORD_API_URL='http://system-of-record.landregistry.local'
@@ -19,6 +24,11 @@ devenv:
   PUBLIC_TITLES_API_URL='http://public-titles-api.landregistry.local'
   SERVICE_FRONTEND_URL='http://service-frontend.landregistry.local'
   DECISION_URL='http://decision.landregistry.local'
+  OWNERSHIP_URL='http://ownership.landregistry.local'
+  MATCHING_URL='http://matching.landregistry.local'
+  INTRODUCTIONS_URL='http://introductions.landregistry.local'
+  CASES_URL='http://cases.landregistry.local'
+  HISTORIAN_URL='http://historian.landregistry.local'
   --format pretty
 heroku:
   SYSTEM_OF_RECORD_API_URL='http://lr-system-of-record.herokuapp.com'
@@ -29,5 +39,10 @@ heroku:
   PUBLIC_TITLES_API_URL='http://lr-public-titles-api.herokuapp.com'
   SERVICE_FRONTEND_URL='http://lr-service-frontend.herokuapp.com'
   DECISION_URL='http://lr-decision.herokuapp.com'
+  OWNERSHIP_URL='http://lr-ownership.herokuapp.com'
+  MATCHING_URL='http://lr-matching.herokuapp.com'
+  INTRODUCTIONS_URL='http://lr-introductions.herokuapp.com'
+  CASES_URL='http://lr-cases.herokuapp.com'
+  HISTORIAN_URL='http://lr-historian.herokuapp.com'
   --format progress
 

@@ -18,4 +18,4 @@ namespace :features do
 
 end
 
-task :default => 'features:local'
+task :default => 'features:devenv'
