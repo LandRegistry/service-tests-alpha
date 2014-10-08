@@ -119,11 +119,9 @@ When(/^I (\w+) to (\/\S*?) without the (\w+) element$/) do |verb, url, element|
   body = @client.fixture('new_registration')
   hash = JSON.parse(body)
   hash.delete(element)
-  puts hash.keys
   step "I #{verb} to #{url} with the body:", hash.to_json
 end
 
 Then(/^I get an error$/) do
-  puts @client.last_body['message']
   assert_equal 'Error', @client.last_body['message']
 end
