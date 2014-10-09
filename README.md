@@ -28,6 +28,12 @@ Or to run a specific feature:
 
     cucumber features/sample.feature
 
+## Fixtures
+
+You can add fixtures to [fixtures](fixtures/), or pull it from the web.
+
+Add your fixture mappings to the [fixture mapping configuration](config/fixture-lookup.txt).
+
 ## Example run output
 
 ![screenshot](http://i.imgur.com/iw1NMUo.png)
