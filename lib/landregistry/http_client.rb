@@ -1,4 +1,5 @@
 require 'json-schema'
+require_relative 'fixture_provider.rb'
 
 module LandRegistry
   class HttpClient
@@ -12,6 +13,7 @@ module LandRegistry
 
       @responses = []
       @hydrate_tokens = {}
+      @fixture_lookup = LandRegistry::FixtureProvider.new()
     end
 
     def log_trace(method, url, request, response)
@@ -171,8 +173,7 @@ module LandRegistry
 
     # support for 'fixtures' in suite root
     def fixture(which)
-      file_name = File.join(File.dirname(__FILE__), "../..", 'fixtures', "#{which}.json")
-      open(file_name).read
+      @fixture_lookup.get(which)
     end
 
     # validate against 'schemas' in suite root

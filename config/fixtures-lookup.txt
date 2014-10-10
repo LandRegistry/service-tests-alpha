@@ -1,0 +1,3 @@
+#new_registration,fixtures/new_registration.json
+new_registration,https://raw.githubusercontent.com/LandRegistry/generate-test-data/master/sample_titles/title-full.json
+bad_registration,fixtures/bad_registration.json

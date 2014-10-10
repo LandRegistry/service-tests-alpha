@@ -114,3 +114,14 @@ Before do |scenario|
   @client = LandRegistry::HttpClient.new($httpbasicauth_username, $httpbasicauth_password, $accept_header)
   @client.running = scenario
 end
+
+When(/^I (\w+) to (\/\S*?) without the (\w+) element$/) do |verb, url, element|
+  body = @client.fixture('new_registration')
+  hash = JSON.parse(body)
+  hash.delete(element)
+  step "I #{verb} to #{url} with the body:", hash.to_json
+end
+
+Then(/^I get an error$/) do
+  assert_equal 'Error', @client.last_body['message']
+end
