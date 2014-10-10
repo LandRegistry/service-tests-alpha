@@ -115,13 +115,14 @@ Before do |scenario|
   @client.running = scenario
 end
 
-When(/^I (\w+) to (\/\S*?) without the (\w+) element$/) do |verb, url, element|
+When(/^I (\w+) to (\/\S*?) without the (\w+) key$/) do |verb, url, key|
   body = @client.fixture('new_registration')
   hash = JSON.parse(body)
-  hash.delete(element)
+  hash['title_number'] = 'TEST' + DateTime.now.strftime('%Q')
+  hash.delete(key)
   step "I #{verb} to #{url} with the body:", hash.to_json
 end
 
-Then(/^I get an error$/) do
-  assert_equal 'Error', @client.last_body['message']
+Then(/^I get an error for (\w+)$/) do |key|
+  assert_equal true, @client.last_body['error'].has_key?(key)
 end
