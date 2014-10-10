@@ -30,8 +30,8 @@
 
             "proprietorship" :   {
                                     "template" : "PROPRIETOR(S):  *RP*",
-                                    "full_text": "PROPRIETOR(S): Michael Jones of 8 Miller Way, Plymouth, Devon, PL6 8UQ",
-                                    "fields" : {"proprietors":[{"name" : {"title" : "Mr", "full_name" : "Michael Jones", "decoration" : ""}, "addresses" : [{"full_address": "8 Miller Way, Plymouth, Devon, PL6 8UQ", "house_no" : "8", "street_name" : "Miller Way", "town" : "Plymouth", "postal_county" : "Devon", "region_name" : "", "country" : "", "postcode":""}]}]},
+                                    "full_text": "PROPRIETOR(S): Michael Jones of 8 Miller Way, Plymouth, Devon, CR0 2AQ",
+                                    "fields" : {"proprietors":[{"name" : {"title" : "Mr", "full_name" : "Michael Jones", "decoration" : ""}, "addresses" : [{"full_address": "8 Miller Way, Plymouth, Devon, CR0 2AQ", "house_no" : "8", "street_name" : "Miller Way", "town" : "Plymouth", "postal_county" : "Devon", "region_name" : "", "country" : "", "postcode":""}]}]},
                                     "deeds" : [],
                                     "notes" : []
                                  },
@@ -39,7 +39,7 @@
             "property_description" : {
                                         "template" : "The Freehold land shown edged with red on the plan of the above Title filed at the Registry and being *AD*",
                                         "full_text" : "The Freehold land shown edged with red on the plan of the above Title filed at the Registry and being 8 Miller Way, Plymouth, Devon, CR0 2AQ",
-                                        "fields" : {"addresses" : [{"full_address": "8 Miller Way, Plymouth, Devon, CR0 2AQ", "house_no" : "8", "street_name" : "Miller Way", "town" : "Plymouth", "postal_county" : "Devon", "region_name" : "", "country" : "", "postcode":"CR0 2AQ"}]},
+                                        "fields" : {"addresses" : [{"full_address": "8 Miller Way, Plymouth, Devon, PL6 8UQ", "house_no" : "8", "street_name" : "Miller Way", "town" : "Plymouth", "postal_county" : "Devon", "region_name" : "", "country" : "", "postcode": "PL6 8UQ"}]},
                                         "deeds" : [],
                                         "notes" : []
                                       },
