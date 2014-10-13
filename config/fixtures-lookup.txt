@@ -1,4 +1,5 @@
 new_registration,fixtures/new_registration.json
 new_registration2,fixtures/new_registration2.json
 new_registration3,fixtures/new_registration3.json
+new_registration4,fixtures/new_registration4.json
 bad_registration,fixtures/bad_registration.json
