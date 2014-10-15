@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+require 'jsonpath'
 
 # any prerequisites to use the APIs below, e.g.
 # creating API key, creating account, etc

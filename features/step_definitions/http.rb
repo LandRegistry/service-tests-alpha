@@ -14,6 +14,11 @@ When(/^I (\w+) to (\/\S*?) with the body:$/) do |verb, url, body|
   @client.send(verb.downcase, @app, @client.hydrater(url), body, env)
 end
 
+When(/^I (\w+) to (\/\S*?) with the fixture: "(.*?)", substituting (.*?) with (.*?)$/) do |verb, url, fixture, json_path, substitution|
+  body = @client.fixture(fixture)
+  substituted_body = JsonPath.for(body).gsub(json_path) { |v| substitution }.to_hash
+  step "I #{verb} to #{url} with the body:", substituted_body.to_json
+end
 
 When(/^I (\w+) to (\/\S*?) with the fixture: "(.*?)"$/) do |verb, url, fixture|
   body = @client.fixture(fixture)
@@ -60,6 +65,10 @@ end
 
 When(/^I GET "(.*?)" from the previous response$/) do |keys|
   @client.get(@client.inject keys)
+end
+
+When /^I wait (\d+) seconds?$/ do |seconds|
+  sleep seconds.to_i
 end
 
 require 'json-schema'
