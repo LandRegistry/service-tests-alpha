@@ -32,7 +32,7 @@ Or to run a specific feature:
 
 You can add fixtures to [fixtures](fixtures/), or pull it from the web.
 
-Add your fixture mappings to the [fixture mapping configuration](config/fixture-lookup.txt).
+Add your fixture mappings to the [fixture mapping configuration](config/fixtures-lookup.txt).
 
 ## Example run output
 
