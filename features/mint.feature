@@ -14,5 +14,6 @@ Feature: Mint title additions and amendments
 
   Scenario: Retrieve a new title
     Given app system-of-record
+    And I wait 10 seconds
     When I GET to /titles/TEST_AB1234567
     Then the response is valid according to the "systemofrecord" schema
