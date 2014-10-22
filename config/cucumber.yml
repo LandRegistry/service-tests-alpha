@@ -41,7 +41,7 @@ heroku:
   DECISION_URL='http://lr-decision.herokuapp.com'
   OWNERSHIP_URL='http://lr-ownership.herokuapp.com'
   MATCHING_URL='http://lr-matching.herokuapp.com'
-  INTRODUCTIONS_URL='http://lr-introductions.herokuapp.com'
+  INTRODUCTIONS_URL='http://lr-introduction-service.herokuapp.com'
   CASES_URL='http://lr-cases.herokuapp.com'
   HISTORIAN_URL='http://lr-historian.herokuapp.com'
   --format progress
